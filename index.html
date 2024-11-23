@@ -4,7 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenmix Cloud</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset and Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            color: #e0e0e0;
+            background-color: #0a0f0b; /* Cinematic dark green background */
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #0d1a13;
+            border-bottom: 2px solid #1e3b29;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #a4d4ae;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .menu li {
+            font-size: 16px;
+        }
+        .navbar .menu li a:hover {
+            color: #69c27f;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #0a0f0b, #1e3b29);
+            color: #e0e0e0;
+        }
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+            color: #69c27f;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            max-width: 700px;
+            line-height: 1.6;
+        }
+        .hero .cta {
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #1e3b29;
+            color: white;
+            border: 2px solid #69c27f;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .hero .cta:hover {
+            background-color: #69c27f;
+            transform: scale(1.05);
+        }
+
+        /* Section */
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #0d1a13;
+        }
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #69c27f;
+        }
+        .section p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+        }
+        .section img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Project Section */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px 20px;
+            background-color: #14251b;
+        }
+        .project {
+            border: 1px solid #1e3b29;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #0d1a13;
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project h3 {
+            font-size: 24px;
+            margin: 15px;
+            color: #69c27f;
+        }
+        .project p {
+            font-size: 16px;
+            margin: 0 15px 15px;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #0d1a13;
+            color: #69c27f;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer p {
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -21,24 +173,24 @@
     <!-- Hero Section -->
     <section class="hero">
         <h1>Audio AI Tools Redefined</h1>
-        <p>Explore innovative audio processing tools powered by AI. Simplify your audio editing and transformation workflows today.</p>
+        <p>Experience the cutting-edge fusion of artificial intelligence and future technology to transform your audio workflows.</p>
         <button class="cta">Explore Projects</button>
     </section>
 
     <!-- Project Section -->
     <section id="projects" class="projects">
         <div class="project">
-            <img src="images/project1.jpg" alt="Project 1">
+            <img src="https://via.placeholder.com/600x400" alt="Project 1">
             <h3>Audio Enhancer</h3>
             <p>Improve audio quality with our advanced AI-powered noise reduction and enhancement tool.</p>
         </div>
         <div class="project">
-            <img src="images/project2.jpg" alt="Project 2">
+            <img src="https://via.placeholder.com/600x400" alt="Project 2">
             <h3>Speech-to-Text</h3>
             <p>Convert speech into accurate text transcriptions with ease.</p>
         </div>
         <div class="project">
-            <img src="images/project3.jpg" alt="Project 3">
+            <img src="https://via.placeholder.com/600x400" alt="Project 3">
             <h3>Audio Effects Generator</h3>
             <p>Add unique audio effects and transform your sound effortlessly.</p>
         </div>
@@ -48,7 +200,5 @@
     <footer class="footer">
         <p>&copy; 2024 Greenmix Cloud. All rights reserved.</p>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
